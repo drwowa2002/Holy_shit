@@ -18,6 +18,7 @@ header div{
     text-align: center;
     font-size: 17px;
     margin-top: 40px;
+    line-height: 1.5;
 }
 
 section{
@@ -32,14 +33,31 @@ section div{
     width: 370px;
     height: 310px;
     position: relative;
-    /* padding-left: 30px; */
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.80));
 }
 
 .date{
     width: 60px;
     height: 60px;
-   background: rgba(red, green, blue, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px;
+    font-weight: 800;
 }
+
+.date :first-child{
+    font-size: 32px;
+}
+
+.date :last-child{
+    font-size: 21px;
+}
+
+
 
 section div img{
     position: absolute;
@@ -47,6 +65,18 @@ section div img{
     height: 100%;
     z-index: -1;
 }
+
+.img_text{
+    margin-left: 15px;
+    margin-top: 130px;
+    font-size: 20px;
+}
+
+.img_footer{
+    margin: 15px;
+    font-size: 13px;
+}
+
 
 button{
     margin-top: 40px;
@@ -56,6 +86,7 @@ button{
     font-weight: 20px;
     color: white;
     border: 0px;
+    transition: .4s;
 }
 
 button:hover{
